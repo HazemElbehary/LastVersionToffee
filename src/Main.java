@@ -16,6 +16,15 @@ public class Main {
         String OTP = in.nextLine();
         ValidateOTP(otp,OTP);
     }
+    public static void OTP(String PhoneNumber){
+        String recipientPhoneNumber = PhoneNumber; // Replace with recipient's phone number
+        String otp = generateOTP(6);
+        sendOTPSMS(recipientPhoneNumber, otp);
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter Your Verification Code:");
+        String OTP = in.nextLine();
+        ValidateOTP(otp,OTP);
+    }
     public static String generateOTP(int length) {
         String numbers = "0123456789";
         Random rndm_method = new Random();
