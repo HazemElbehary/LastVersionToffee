@@ -9,12 +9,12 @@ public class Customer {
     Scanner sc = new Scanner(System.in);
     public Customer(){
     }
-//    public Customer(String add, String em, String pass, int phNum){
-//        address = add;
-//        email=em;
-//        password=pass;
-//        phoneNumber = phNum;
-//    }
+    public Customer(String add, String em, String pass, int phNum){
+        address = add;
+        email=em;
+        password=pass;
+        phoneNumber = phNum;
+    }
     
     
     void regester(){
